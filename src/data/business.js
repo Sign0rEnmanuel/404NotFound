@@ -5,8 +5,8 @@
 export const BUSINESS = {
   name: '404NotFound',
 
-  // TODO: dominio real (sin barra final). Se usa en canonical, hreflang, Open Graph y JSON-LD.
-  siteUrl: 'https://404notfound.dev',
+  // Dominio público (sin barra final). Se usa en canonical, hreflang, Open Graph, JSON-LD y sitemap.
+  siteUrl: 'https://404-not-found-ebon-six.vercel.app',
 
   // El formulario de contacto arma un mailto: hacia esta dirección.
   email: 'marzalenmanuel4@gmail.com',
@@ -30,17 +30,17 @@ export const BUSINESS = {
 }
 
 /**
- * Tecnologías que muestra la sección "Stack".
- * TODO: ejemplos genéricos marcados como placeholder; ajústalos a lo que el equipo usa de verdad.
- * @type {{ name: string, placeholder?: boolean }[]}
+ * Tecnologías que muestra la sección "Stack" (y `knowsAbout` en el JSON-LD).
+ * @type {{ name: string }[]}
  */
 export const TECH_STACK = [
-  { name: 'React', placeholder: true },
-  { name: 'Vite', placeholder: true },
-  { name: 'Tailwind CSS', placeholder: true },
-  { name: 'Node.js', placeholder: true },
-  { name: 'Next.js', placeholder: true },
-  { name: 'WordPress', placeholder: true },
-  { name: 'Shopify', placeholder: true },
-  { name: 'Figma', placeholder: true },
+  { name: 'HTML' },
+  { name: 'CSS' },
+  { name: 'JavaScript' },
+  { name: 'TypeScript' },
+  { name: 'React' },
+  { name: 'Node.js' },
+  { name: 'Express' },
+  { name: 'MongoDB' },
+  { name: 'SQL' },
 ]
