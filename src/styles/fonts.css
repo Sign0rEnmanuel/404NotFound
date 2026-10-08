@@ -1,0 +1,24 @@
+/*
+ * Fuentes autoalojadas (@fontsource). Máximo tres familias activas.
+ *
+ * Para cambiar la fuente pixel a Press Start 2P:
+ *   1. comenta los @import de Silkscreen y descomenta el de Press Start 2P
+ *   2. cambia --font-pixel más abajo
+ */
+@import '@fontsource/silkscreen/latin-400.css';
+@import '@fontsource/silkscreen/latin-700.css';
+/* @import '@fontsource/press-start-2p/latin-400.css'; */
+
+@import '@fontsource/space-grotesk/latin-400.css';
+@import '@fontsource/space-grotesk/latin-500.css';
+@import '@fontsource/space-grotesk/latin-700.css';
+
+@import '@fontsource/jetbrains-mono/latin-400.css';
+@import '@fontsource/jetbrains-mono/latin-700.css';
+
+:root {
+  --font-pixel: 'Silkscreen', ui-monospace, monospace;
+  /* --font-pixel: 'Press Start 2P', ui-monospace, monospace; */
+  --font-body: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+}
