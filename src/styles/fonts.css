@@ -17,8 +17,8 @@
 @import '@fontsource/jetbrains-mono/latin-700.css';
 
 :root {
-  --font-pixel: 'Silkscreen', ui-monospace, monospace;
-  /* --font-pixel: 'Press Start 2P', ui-monospace, monospace; */
-  --font-body: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
+    --font-pixel: 'Silkscreen', ui-monospace, monospace;
+    /* --font-pixel: 'Press Start 2P', ui-monospace, monospace; */
+    --font-body: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', monospace;
 }

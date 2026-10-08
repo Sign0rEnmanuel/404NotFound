@@ -13,32 +13,41 @@ import './ui.css'
  * @param {string} [props.className]
  * @param {import('react').ReactNode} props.children
  */
-export default function PixelButton({ variant = 'primary', size = 'md', to, href, icon, className = '', children, ...rest }) {
-  const classes = `pixel-btn pixel-btn--${variant} pixel-btn--${size} ${className}`.trim()
-  const content = (
-    <>
-      <span>{children}</span>
-      {icon}
-    </>
-  )
+export default function PixelButton({
+    variant = 'primary',
+    size = 'md',
+    to,
+    href,
+    icon,
+    className = '',
+    children,
+    ...rest
+}) {
+    const classes = `pixel-btn pixel-btn--${variant} pixel-btn--${size} ${className}`.trim()
+    const content = (
+        <>
+            <span>{children}</span>
+            {icon}
+        </>
+    )
 
-  if (to) {
+    if (to) {
+        return (
+            <Link to={to} className={classes} {...rest}>
+                {content}
+            </Link>
+        )
+    }
+    if (href) {
+        return (
+            <a href={href} className={classes} {...rest}>
+                {content}
+            </a>
+        )
+    }
     return (
-      <Link to={to} className={classes} {...rest}>
-        {content}
-      </Link>
+        <button type="button" className={classes} {...rest}>
+            {content}
+        </button>
     )
-  }
-  if (href) {
-    return (
-      <a href={href} className={classes} {...rest}>
-        {content}
-      </a>
-    )
-  }
-  return (
-    <button type="button" className={classes} {...rest}>
-      {content}
-    </button>
-  )
 }

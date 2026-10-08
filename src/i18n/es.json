@@ -1,200 +1,200 @@
 {
-  "meta": {
-    "title": "404NotFound · Estudio de desarrollo web",
-    "description": "Somos un equipo de programadores que crea páginas web para negocios: landing pages, sitios corporativos y e-commerce. Rápidas, accesibles y hechas a medida.",
-    "notFoundTitle": "Página no encontrada · 404NotFound",
-    "notFoundDescription": "Esta página no existe. Pero tu próxima web sí puede existir.",
-    "ogImageAlt": "Logo de 404NotFound en pixel art: una ventana de navegador con el número 404, donde el cero es una lupa."
-  },
-  "a11y": {
-    "skip": "Saltar al contenido",
-    "home": "404NotFound, ir al inicio",
-    "logo": "Logo de 404NotFound: ventana de navegador con el número 404, donde el cero es una lupa",
-    "mainNav": "Navegación principal",
-    "footerNav": "Navegación del pie de página",
-    "openMenu": "Abrir menú",
-    "closeMenu": "Cerrar menú",
-    "language": "Elegir idioma",
-    "newTab": "(se abre en una pestaña nueva)",
-    "social": "Redes sociales"
-  },
-  "nav": {
-    "services": "Servicios",
-    "process": "Proceso",
-    "projects": "Proyectos",
-    "stack": "Stack",
-    "why": "Por qué nosotros",
-    "contact": "Contacto",
-    "cta": "Hablemos"
-  },
-  "hero": {
-    "prompt": "> buscando tu próximo proyecto...",
-    "title": "Creamos webs que funcionan",
-    "subtitle": "Si no nos encuentras, es porque estamos programando.",
-    "lead": "Somos un equipo de programadores que crea páginas web para negocios, desde landing pages hasta e-commerce.",
-    "ctaPrimary": "Hablemos",
-    "ctaSecondary": "Ver proyectos"
-  },
-  "services": {
-    "eyebrow": "01 / servicios",
-    "title": "Qué hacemos",
-    "intro": "Webs a medida, del primer clic a la primera venta.",
-    "items": {
-      "landing": {
-        "title": "Landing pages",
-        "text": "Una página, un objetivo: convertir visitas en clientes."
-      },
-      "corporate": {
-        "title": "Sitios corporativos",
-        "text": "Tu empresa bien presentada, rápida y fácil de actualizar."
-      },
-      "ecommerce": {
-        "title": "E-commerce",
-        "text": "Tiendas online listas para vender, del catálogo al checkout."
-      },
-      "support": {
-        "title": "Mantenimiento y soporte",
-        "text": "Actualizaciones, backups y correcciones. Nosotros nos encargamos, tú vendes."
-      }
+    "meta": {
+        "title": "404NotFound · Estudio de desarrollo web",
+        "description": "Somos un equipo de programadores que crea páginas web para negocios: landing pages, sitios corporativos y e-commerce. Rápidas, accesibles y hechas a medida.",
+        "notFoundTitle": "Página no encontrada · 404NotFound",
+        "notFoundDescription": "Esta página no existe. Pero tu próxima web sí puede existir.",
+        "ogImageAlt": "Logo de 404NotFound en pixel art: una ventana de navegador con el número 404, donde el cero es una lupa."
+    },
+    "a11y": {
+        "skip": "Saltar al contenido",
+        "home": "404NotFound, ir al inicio",
+        "logo": "Logo de 404NotFound: ventana de navegador con el número 404, donde el cero es una lupa",
+        "mainNav": "Navegación principal",
+        "footerNav": "Navegación del pie de página",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú",
+        "language": "Elegir idioma",
+        "newTab": "(se abre en una pestaña nueva)",
+        "social": "Redes sociales"
+    },
+    "nav": {
+        "services": "Servicios",
+        "process": "Proceso",
+        "projects": "Proyectos",
+        "stack": "Stack",
+        "why": "Por qué nosotros",
+        "contact": "Contacto",
+        "cta": "Hablemos"
+    },
+    "hero": {
+        "prompt": "> buscando tu próximo proyecto...",
+        "title": "Creamos webs que funcionan",
+        "subtitle": "Si no nos encuentras, es porque estamos programando.",
+        "lead": "Somos un equipo de programadores que crea páginas web para negocios, desde landing pages hasta e-commerce.",
+        "ctaPrimary": "Hablemos",
+        "ctaSecondary": "Ver proyectos"
+    },
+    "services": {
+        "eyebrow": "01 / servicios",
+        "title": "Qué hacemos",
+        "intro": "Webs a medida, del primer clic a la primera venta.",
+        "items": {
+            "landing": {
+                "title": "Landing pages",
+                "text": "Una página, un objetivo: convertir visitas en clientes."
+            },
+            "corporate": {
+                "title": "Sitios corporativos",
+                "text": "Tu empresa bien presentada, rápida y fácil de actualizar."
+            },
+            "ecommerce": {
+                "title": "E-commerce",
+                "text": "Tiendas online listas para vender, del catálogo al checkout."
+            },
+            "support": {
+                "title": "Mantenimiento y soporte",
+                "text": "Actualizaciones, backups y correcciones. Nosotros nos encargamos, tú vendes."
+            }
+        }
+    },
+    "process": {
+        "eyebrow": "02 / proceso",
+        "title": "Cómo trabajamos",
+        "intro": "Cuatro pasos, cero misterio.",
+        "steps": {
+            "brief": {
+                "label": "brief",
+                "text": "Entendemos tu negocio, tu público y lo que la web tiene que resolver."
+            },
+            "design": {
+                "label": "diseño",
+                "text": "Diseñamos la estructura y el aspecto antes de escribir una línea de código."
+            },
+            "build": {
+                "label": "desarrollo",
+                "text": "Programamos con código limpio, rápido y responsive."
+            },
+            "deploy": {
+                "label": "deploy",
+                "text": "Publicamos, probamos y dejamos todo en línea contigo."
+            }
+        },
+        "terminalTitle": "terminal: deploy",
+        "terminal": [
+            { "type": "cmd", "text": "npm run build" },
+            { "type": "out", "text": "optimizando imágenes... ok" },
+            { "type": "out", "text": "minificando código... ok" },
+            { "type": "warn", "text": "aviso: se está acabando el café" },
+            { "type": "ok", "text": "build listo" },
+            { "type": "cmd", "text": "npm run deploy" },
+            { "type": "ok", "text": "deploy completo. tu web ya está en línea" }
+        ]
+    },
+    "projects": {
+        "eyebrow": "03 / proyectos",
+        "title": "Nuestros proyectos",
+        "intro": "Algunos trabajos recientes, cada uno con su propio desafío.",
+        "categories": {
+            "landing": "Landing page",
+            "corporate": "Corporativo",
+            "ecommerce": "E-commerce",
+            "webapp": "Aplicación web"
+        },
+        "placeholder": "ejemplo",
+        "status": {
+            "demo": "demo",
+            "beta": "en pruebas"
+        },
+        "stackLabel": "Tecnologías usadas",
+        "visit": "Ver proyecto",
+        "imageAlt": "Ilustración en pixel art del proyecto {{name}}",
+        "screenshotAlt": "Captura de la página principal del proyecto {{name}}"
+    },
+    "stack": {
+        "eyebrow": "04 / stack",
+        "title": "Nuestro stack",
+        "intro": "Las herramientas que usamos en el día a día."
+    },
+    "why": {
+        "eyebrow": "05 / diferenciales",
+        "title": "Por qué elegirnos",
+        "intro": "Sin promesas exageradas. Solo lo que podemos cumplir.",
+        "items": {
+            "direct": {
+                "title": "Hablas con quien programa",
+                "text": "Sin intermediarios: quien escribe el código responde tus mensajes."
+            },
+            "clean": {
+                "title": "Código limpio, sin rodeos",
+                "text": "Nada de plantillas pesadas ni plugins innecesarios."
+            },
+            "fast": {
+                "title": "Rápida desde el inicio",
+                "text": "Rendimiento, SEO y accesibilidad son parte del proyecto, no extras."
+            },
+            "yours": {
+                "title": "Tu web es tuya",
+                "text": "El código, el dominio y los accesos quedan contigo. Sin ataduras."
+            }
+        },
+        "stats": {
+            "projects": "proyectos entregados",
+            "years": "años programando"
+        }
+    },
+    "contact": {
+        "eyebrow": "06 / contacto",
+        "title": "Hablemos",
+        "intro": "Cuéntanos tu idea. Respondemos rápido (cuando no estamos programando).",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "namePlaceholder": "¿Cómo te llamamos?",
+            "emailPlaceholder": "tu@empresa.com",
+            "messagePlaceholder": "¿Qué tipo de web necesitas?",
+            "submitEmail": "Enviar por email",
+            "submitWhatsapp": "Enviar por WhatsApp"
+        },
+        "errors": {
+            "name": "Dinos tu nombre.",
+            "email": "Ese email no parece válido.",
+            "message": "Cuéntanos un poco más (mínimo 10 caracteres)."
+        },
+        "status": {
+            "email": "> abriendo tu app de email...",
+            "whatsapp": "> abriendo WhatsApp..."
+        },
+        "mail": {
+            "subject": "Nuevo proyecto desde la web: {{name}}",
+            "greeting": "¡Hola, 404NotFound!",
+            "signature": "{{name}} ({{email}})"
+        },
+        "direct": "O escríbenos directamente:",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp"
+    },
+    "footer": {
+        "tagline": "Found: tu próxima web",
+        "rights": "Todos los derechos reservados.",
+        "status": "$ status: online"
+    },
+    "notFound": {
+        "prompt": "> error 404",
+        "title": "Esta página no existe",
+        "subtitle": "Como el bug que juraste que arreglaste.",
+        "back": "Volver al inicio",
+        "secondary": "Ver proyectos",
+        "consoleTitle": "consola: easter egg",
+        "console": [
+            { "type": "cmd", "text": "curl {{path}}" },
+            { "type": "err", "text": "HTTP 404: página no encontrada" },
+            { "type": "cmd", "text": "git blame" },
+            { "type": "out", "text": "fue el becario. siempre es el becario." },
+            { "type": "cmd", "text": "sudo encontrar-pagina --a-la-fuerza" },
+            { "type": "warn", "text": "permiso denegado. buen intento." },
+            { "type": "ok", "text": "pista: el botón de abajo funciona de verdad" }
+        ]
     }
-  },
-  "process": {
-    "eyebrow": "02 / proceso",
-    "title": "Cómo trabajamos",
-    "intro": "Cuatro pasos, cero misterio.",
-    "steps": {
-      "brief": {
-        "label": "brief",
-        "text": "Entendemos tu negocio, tu público y lo que la web tiene que resolver."
-      },
-      "design": {
-        "label": "diseño",
-        "text": "Diseñamos la estructura y el aspecto antes de escribir una línea de código."
-      },
-      "build": {
-        "label": "desarrollo",
-        "text": "Programamos con código limpio, rápido y responsive."
-      },
-      "deploy": {
-        "label": "deploy",
-        "text": "Publicamos, probamos y dejamos todo en línea contigo."
-      }
-    },
-    "terminalTitle": "terminal: deploy",
-    "terminal": [
-      { "type": "cmd", "text": "npm run build" },
-      { "type": "out", "text": "optimizando imágenes... ok" },
-      { "type": "out", "text": "minificando código... ok" },
-      { "type": "warn", "text": "aviso: se está acabando el café" },
-      { "type": "ok", "text": "build listo" },
-      { "type": "cmd", "text": "npm run deploy" },
-      { "type": "ok", "text": "deploy completo. tu web ya está en línea" }
-    ]
-  },
-  "projects": {
-    "eyebrow": "03 / proyectos",
-    "title": "Nuestros proyectos",
-    "intro": "Algunos trabajos recientes, cada uno con su propio desafío.",
-    "categories": {
-      "landing": "Landing page",
-      "corporate": "Corporativo",
-      "ecommerce": "E-commerce",
-      "webapp": "Aplicación web"
-    },
-    "placeholder": "ejemplo",
-    "status": {
-      "demo": "demo",
-      "beta": "en pruebas"
-    },
-    "stackLabel": "Tecnologías usadas",
-    "visit": "Ver proyecto",
-    "imageAlt": "Ilustración en pixel art del proyecto {{name}}",
-    "screenshotAlt": "Captura de la página principal del proyecto {{name}}"
-  },
-  "stack": {
-    "eyebrow": "04 / stack",
-    "title": "Nuestro stack",
-    "intro": "Las herramientas que usamos en el día a día."
-  },
-  "why": {
-    "eyebrow": "05 / diferenciales",
-    "title": "Por qué elegirnos",
-    "intro": "Sin promesas exageradas. Solo lo que podemos cumplir.",
-    "items": {
-      "direct": {
-        "title": "Hablas con quien programa",
-        "text": "Sin intermediarios: quien escribe el código responde tus mensajes."
-      },
-      "clean": {
-        "title": "Código limpio, sin rodeos",
-        "text": "Nada de plantillas pesadas ni plugins innecesarios."
-      },
-      "fast": {
-        "title": "Rápida desde el inicio",
-        "text": "Rendimiento, SEO y accesibilidad son parte del proyecto, no extras."
-      },
-      "yours": {
-        "title": "Tu web es tuya",
-        "text": "El código, el dominio y los accesos quedan contigo. Sin ataduras."
-      }
-    },
-    "stats": {
-      "projects": "proyectos entregados",
-      "years": "años programando"
-    }
-  },
-  "contact": {
-    "eyebrow": "06 / contacto",
-    "title": "Hablemos",
-    "intro": "Cuéntanos tu idea. Respondemos rápido (cuando no estamos programando).",
-    "form": {
-      "name": "Nombre",
-      "email": "Email",
-      "message": "Mensaje",
-      "namePlaceholder": "¿Cómo te llamamos?",
-      "emailPlaceholder": "tu@empresa.com",
-      "messagePlaceholder": "¿Qué tipo de web necesitas?",
-      "submitEmail": "Enviar por email",
-      "submitWhatsapp": "Enviar por WhatsApp"
-    },
-    "errors": {
-      "name": "Dinos tu nombre.",
-      "email": "Ese email no parece válido.",
-      "message": "Cuéntanos un poco más (mínimo 10 caracteres)."
-    },
-    "status": {
-      "email": "> abriendo tu app de email...",
-      "whatsapp": "> abriendo WhatsApp..."
-    },
-    "mail": {
-      "subject": "Nuevo proyecto desde la web: {{name}}",
-      "greeting": "¡Hola, 404NotFound!",
-      "signature": "{{name}} ({{email}})"
-    },
-    "direct": "O escríbenos directamente:",
-    "emailLabel": "Email",
-    "whatsappLabel": "WhatsApp"
-  },
-  "footer": {
-    "tagline": "Found: tu próxima web",
-    "rights": "Todos los derechos reservados.",
-    "status": "$ status: online"
-  },
-  "notFound": {
-    "prompt": "> error 404",
-    "title": "Esta página no existe",
-    "subtitle": "Como el bug que juraste que arreglaste.",
-    "back": "Volver al inicio",
-    "secondary": "Ver proyectos",
-    "consoleTitle": "consola: easter egg",
-    "console": [
-      { "type": "cmd", "text": "curl {{path}}" },
-      { "type": "err", "text": "HTTP 404: página no encontrada" },
-      { "type": "cmd", "text": "git blame" },
-      { "type": "out", "text": "fue el becario. siempre es el becario." },
-      { "type": "cmd", "text": "sudo encontrar-pagina --a-la-fuerza" },
-      { "type": "warn", "text": "permiso denegado. buen intento." },
-      { "type": "ok", "text": "pista: el botón de abajo funciona de verdad" }
-    ]
-  }
 }

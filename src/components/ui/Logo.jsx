@@ -1,12 +1,12 @@
 import { LOGO, LOGO_MARK } from '../../lib/logoArt.js'
 
 const FILLS = {
-  surface: 'var(--surface)',
-  bg: 'var(--bg)',
-  text: 'var(--text)',
-  cyan: 'var(--accent-cyan)',
-  red: 'var(--accent-red)',
-  amber: 'var(--accent-amber)',
+    surface: 'var(--surface)',
+    bg: 'var(--bg)',
+    text: 'var(--text)',
+    cyan: 'var(--accent-cyan)',
+    red: 'var(--accent-red)',
+    amber: 'var(--accent-amber)',
 }
 
 /**
@@ -18,22 +18,22 @@ const FILLS = {
  * @param {string} [props.className]
  */
 export default function Logo({ variant = 'full', cell = 2, title, className }) {
-  const art = variant === 'mark' ? LOGO_MARK : LOGO
-  const a11y = title ? { role: 'img', 'aria-label': title } : { 'aria-hidden': true, focusable: 'false' }
+    const art = variant === 'mark' ? LOGO_MARK : LOGO
+    const a11y = title ? { role: 'img', 'aria-label': title } : { 'aria-hidden': true, focusable: 'false' }
 
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox={`0 0 ${art.width} ${art.height}`}
-      width={art.width * cell}
-      height={art.height * cell}
-      shapeRendering="crispEdges"
-      className={className}
-      {...a11y}
-    >
-      {art.layers.map((layer, i) => (
-        <path key={i} d={layer.d} fill={FILLS[layer.color]} />
-      ))}
-    </svg>
-  )
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox={`0 0 ${art.width} ${art.height}`}
+            width={art.width * cell}
+            height={art.height * cell}
+            shapeRendering="crispEdges"
+            className={className}
+            {...a11y}
+        >
+            {art.layers.map((layer, i) => (
+                <path key={i} d={layer.d} fill={FILLS[layer.color]} />
+            ))}
+        </svg>
+    )
 }

@@ -1,200 +1,200 @@
 {
-  "meta": {
-    "title": "404NotFound · Web development studio",
-    "description": "We're a team of developers building websites for businesses: landing pages, corporate sites and e-commerce. Fast, accessible and made to measure.",
-    "notFoundTitle": "Page not found · 404NotFound",
-    "notFoundDescription": "This page doesn't exist. Your next website, however, can.",
-    "ogImageAlt": "404NotFound pixel art logo: a browser window with the number 404, where the zero is a magnifying glass."
-  },
-  "a11y": {
-    "skip": "Skip to content",
-    "home": "404NotFound, go to homepage",
-    "logo": "404NotFound logo: a browser window with the number 404, where the zero is a magnifying glass",
-    "mainNav": "Main navigation",
-    "footerNav": "Footer navigation",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "language": "Choose language",
-    "newTab": "(opens in a new tab)",
-    "social": "Social media"
-  },
-  "nav": {
-    "services": "Services",
-    "process": "Process",
-    "projects": "Projects",
-    "stack": "Stack",
-    "why": "Why us",
-    "contact": "Contact",
-    "cta": "Let's talk"
-  },
-  "hero": {
-    "prompt": "> looking for your next project...",
-    "title": "We build websites that work",
-    "subtitle": "If you can't find us, it's because we're coding.",
-    "lead": "We're a team of developers building websites for businesses, from landing pages to e-commerce.",
-    "ctaPrimary": "Let's talk",
-    "ctaSecondary": "See projects"
-  },
-  "services": {
-    "eyebrow": "01 / services",
-    "title": "What we do",
-    "intro": "Custom websites, from the first click to the first sale.",
-    "items": {
-      "landing": {
-        "title": "Landing pages",
-        "text": "One page, one goal: turning visitors into customers."
-      },
-      "corporate": {
-        "title": "Corporate websites",
-        "text": "Your company well presented, fast and easy to update."
-      },
-      "ecommerce": {
-        "title": "E-commerce",
-        "text": "Online stores ready to sell, from catalog to checkout."
-      },
-      "support": {
-        "title": "Maintenance & support",
-        "text": "Updates, backups and fixes. We handle it, you keep selling."
-      }
+    "meta": {
+        "title": "404NotFound · Web development studio",
+        "description": "We're a team of developers building websites for businesses: landing pages, corporate sites and e-commerce. Fast, accessible and made to measure.",
+        "notFoundTitle": "Page not found · 404NotFound",
+        "notFoundDescription": "This page doesn't exist. Your next website, however, can.",
+        "ogImageAlt": "404NotFound pixel art logo: a browser window with the number 404, where the zero is a magnifying glass."
+    },
+    "a11y": {
+        "skip": "Skip to content",
+        "home": "404NotFound, go to homepage",
+        "logo": "404NotFound logo: a browser window with the number 404, where the zero is a magnifying glass",
+        "mainNav": "Main navigation",
+        "footerNav": "Footer navigation",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "language": "Choose language",
+        "newTab": "(opens in a new tab)",
+        "social": "Social media"
+    },
+    "nav": {
+        "services": "Services",
+        "process": "Process",
+        "projects": "Projects",
+        "stack": "Stack",
+        "why": "Why us",
+        "contact": "Contact",
+        "cta": "Let's talk"
+    },
+    "hero": {
+        "prompt": "> looking for your next project...",
+        "title": "We build websites that work",
+        "subtitle": "If you can't find us, it's because we're coding.",
+        "lead": "We're a team of developers building websites for businesses, from landing pages to e-commerce.",
+        "ctaPrimary": "Let's talk",
+        "ctaSecondary": "See projects"
+    },
+    "services": {
+        "eyebrow": "01 / services",
+        "title": "What we do",
+        "intro": "Custom websites, from the first click to the first sale.",
+        "items": {
+            "landing": {
+                "title": "Landing pages",
+                "text": "One page, one goal: turning visitors into customers."
+            },
+            "corporate": {
+                "title": "Corporate websites",
+                "text": "Your company well presented, fast and easy to update."
+            },
+            "ecommerce": {
+                "title": "E-commerce",
+                "text": "Online stores ready to sell, from catalog to checkout."
+            },
+            "support": {
+                "title": "Maintenance & support",
+                "text": "Updates, backups and fixes. We handle it, you keep selling."
+            }
+        }
+    },
+    "process": {
+        "eyebrow": "02 / process",
+        "title": "How we work",
+        "intro": "Four steps, zero mystery.",
+        "steps": {
+            "brief": {
+                "label": "brief",
+                "text": "We get to know your business, your audience and what the site needs to solve."
+            },
+            "design": {
+                "label": "design",
+                "text": "We design the structure and look before writing a single line of code."
+            },
+            "build": {
+                "label": "development",
+                "text": "We code it clean, fast and responsive."
+            },
+            "deploy": {
+                "label": "deploy",
+                "text": "We publish, test and take it live together with you."
+            }
+        },
+        "terminalTitle": "terminal: deploy",
+        "terminal": [
+            { "type": "cmd", "text": "npm run build" },
+            { "type": "out", "text": "optimizing images... ok" },
+            { "type": "out", "text": "minifying code... ok" },
+            { "type": "warn", "text": "warning: coffee is running low" },
+            { "type": "ok", "text": "build ready" },
+            { "type": "cmd", "text": "npm run deploy" },
+            { "type": "ok", "text": "deploy complete. your site is live" }
+        ]
+    },
+    "projects": {
+        "eyebrow": "03 / projects",
+        "title": "Our projects",
+        "intro": "Some recent work, each with its own challenge.",
+        "categories": {
+            "landing": "Landing page",
+            "corporate": "Corporate",
+            "ecommerce": "E-commerce",
+            "webapp": "Web app"
+        },
+        "placeholder": "example",
+        "status": {
+            "demo": "demo",
+            "beta": "in testing"
+        },
+        "stackLabel": "Technologies used",
+        "visit": "View project",
+        "imageAlt": "Pixel art illustration of the {{name}} project",
+        "screenshotAlt": "Screenshot of the {{name}} homepage"
+    },
+    "stack": {
+        "eyebrow": "04 / stack",
+        "title": "Our stack",
+        "intro": "The tools we use every day."
+    },
+    "why": {
+        "eyebrow": "05 / why us",
+        "title": "Why choose us",
+        "intro": "No overblown promises. Just what we can deliver.",
+        "items": {
+            "direct": {
+                "title": "Talk to the people who code",
+                "text": "No middlemen: whoever writes the code answers your messages."
+            },
+            "clean": {
+                "title": "Clean code, no fluff",
+                "text": "No heavy templates or unnecessary plugins."
+            },
+            "fast": {
+                "title": "Fast from day one",
+                "text": "Performance, SEO and accessibility are part of the project, not add-ons."
+            },
+            "yours": {
+                "title": "Your site is yours",
+                "text": "The code, domain and logins stay with you. No strings attached."
+            }
+        },
+        "stats": {
+            "projects": "projects delivered",
+            "years": "years coding"
+        }
+    },
+    "contact": {
+        "eyebrow": "06 / contact",
+        "title": "Let's talk",
+        "intro": "Tell us about your idea. We reply fast (when we're not coding).",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "namePlaceholder": "What should we call you?",
+            "emailPlaceholder": "you@company.com",
+            "messagePlaceholder": "What kind of website do you need?",
+            "submitEmail": "Send by email",
+            "submitWhatsapp": "Send via WhatsApp"
+        },
+        "errors": {
+            "name": "Tell us your name.",
+            "email": "That email doesn't look valid.",
+            "message": "Tell us a bit more (at least 10 characters)."
+        },
+        "status": {
+            "email": "> opening your email app...",
+            "whatsapp": "> opening WhatsApp..."
+        },
+        "mail": {
+            "subject": "New project from the website: {{name}}",
+            "greeting": "Hi, 404NotFound!",
+            "signature": "{{name}} ({{email}})"
+        },
+        "direct": "Or reach us directly:",
+        "emailLabel": "Email",
+        "whatsappLabel": "WhatsApp"
+    },
+    "footer": {
+        "tagline": "Found: your next website",
+        "rights": "All rights reserved.",
+        "status": "$ status: online"
+    },
+    "notFound": {
+        "prompt": "> error 404",
+        "title": "This page doesn't exist",
+        "subtitle": "Just like that bug you swore you fixed.",
+        "back": "Back to home",
+        "secondary": "See projects",
+        "consoleTitle": "console: easter egg",
+        "console": [
+            { "type": "cmd", "text": "curl {{path}}" },
+            { "type": "err", "text": "HTTP 404: page not found" },
+            { "type": "cmd", "text": "git blame" },
+            { "type": "out", "text": "it was the intern. it's always the intern." },
+            { "type": "cmd", "text": "sudo find-page --force" },
+            { "type": "warn", "text": "permission denied. nice try." },
+            { "type": "ok", "text": "hint: the button below actually works" }
+        ]
     }
-  },
-  "process": {
-    "eyebrow": "02 / process",
-    "title": "How we work",
-    "intro": "Four steps, zero mystery.",
-    "steps": {
-      "brief": {
-        "label": "brief",
-        "text": "We get to know your business, your audience and what the site needs to solve."
-      },
-      "design": {
-        "label": "design",
-        "text": "We design the structure and look before writing a single line of code."
-      },
-      "build": {
-        "label": "development",
-        "text": "We code it clean, fast and responsive."
-      },
-      "deploy": {
-        "label": "deploy",
-        "text": "We publish, test and take it live together with you."
-      }
-    },
-    "terminalTitle": "terminal: deploy",
-    "terminal": [
-      { "type": "cmd", "text": "npm run build" },
-      { "type": "out", "text": "optimizing images... ok" },
-      { "type": "out", "text": "minifying code... ok" },
-      { "type": "warn", "text": "warning: coffee is running low" },
-      { "type": "ok", "text": "build ready" },
-      { "type": "cmd", "text": "npm run deploy" },
-      { "type": "ok", "text": "deploy complete. your site is live" }
-    ]
-  },
-  "projects": {
-    "eyebrow": "03 / projects",
-    "title": "Our projects",
-    "intro": "Some recent work, each with its own challenge.",
-    "categories": {
-      "landing": "Landing page",
-      "corporate": "Corporate",
-      "ecommerce": "E-commerce",
-      "webapp": "Web app"
-    },
-    "placeholder": "example",
-    "status": {
-      "demo": "demo",
-      "beta": "in testing"
-    },
-    "stackLabel": "Technologies used",
-    "visit": "View project",
-    "imageAlt": "Pixel art illustration of the {{name}} project",
-    "screenshotAlt": "Screenshot of the {{name}} homepage"
-  },
-  "stack": {
-    "eyebrow": "04 / stack",
-    "title": "Our stack",
-    "intro": "The tools we use every day."
-  },
-  "why": {
-    "eyebrow": "05 / why us",
-    "title": "Why choose us",
-    "intro": "No overblown promises. Just what we can deliver.",
-    "items": {
-      "direct": {
-        "title": "Talk to the people who code",
-        "text": "No middlemen: whoever writes the code answers your messages."
-      },
-      "clean": {
-        "title": "Clean code, no fluff",
-        "text": "No heavy templates or unnecessary plugins."
-      },
-      "fast": {
-        "title": "Fast from day one",
-        "text": "Performance, SEO and accessibility are part of the project, not add-ons."
-      },
-      "yours": {
-        "title": "Your site is yours",
-        "text": "The code, domain and logins stay with you. No strings attached."
-      }
-    },
-    "stats": {
-      "projects": "projects delivered",
-      "years": "years coding"
-    }
-  },
-  "contact": {
-    "eyebrow": "06 / contact",
-    "title": "Let's talk",
-    "intro": "Tell us about your idea. We reply fast (when we're not coding).",
-    "form": {
-      "name": "Name",
-      "email": "Email",
-      "message": "Message",
-      "namePlaceholder": "What should we call you?",
-      "emailPlaceholder": "you@company.com",
-      "messagePlaceholder": "What kind of website do you need?",
-      "submitEmail": "Send by email",
-      "submitWhatsapp": "Send via WhatsApp"
-    },
-    "errors": {
-      "name": "Tell us your name.",
-      "email": "That email doesn't look valid.",
-      "message": "Tell us a bit more (at least 10 characters)."
-    },
-    "status": {
-      "email": "> opening your email app...",
-      "whatsapp": "> opening WhatsApp..."
-    },
-    "mail": {
-      "subject": "New project from the website: {{name}}",
-      "greeting": "Hi, 404NotFound!",
-      "signature": "{{name}} ({{email}})"
-    },
-    "direct": "Or reach us directly:",
-    "emailLabel": "Email",
-    "whatsappLabel": "WhatsApp"
-  },
-  "footer": {
-    "tagline": "Found: your next website",
-    "rights": "All rights reserved.",
-    "status": "$ status: online"
-  },
-  "notFound": {
-    "prompt": "> error 404",
-    "title": "This page doesn't exist",
-    "subtitle": "Just like that bug you swore you fixed.",
-    "back": "Back to home",
-    "secondary": "See projects",
-    "consoleTitle": "console: easter egg",
-    "console": [
-      { "type": "cmd", "text": "curl {{path}}" },
-      { "type": "err", "text": "HTTP 404: page not found" },
-      { "type": "cmd", "text": "git blame" },
-      { "type": "out", "text": "it was the intern. it's always the intern." },
-      { "type": "cmd", "text": "sudo find-page --force" },
-      { "type": "warn", "text": "permission denied. nice try." },
-      { "type": "ok", "text": "hint: the button below actually works" }
-    ]
-  }
 }

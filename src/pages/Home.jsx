@@ -9,16 +9,16 @@ import WhyUs from '../components/sections/WhyUs.jsx'
 
 /** Landing principal. */
 export default function Home() {
-  return (
-    <>
-      <Seo page="home" />
-      <Hero />
-      <Services />
-      <Process />
-      <Projects />
-      <Stack />
-      <WhyUs />
-      <Contact />
-    </>
-  )
+    return (
+        <>
+            <Seo page="home" />
+            <Hero />
+            <Services />
+            <Process />
+            <Projects />
+            <Stack />
+            <WhyUs />
+            <Contact />
+        </>
+    )
 }

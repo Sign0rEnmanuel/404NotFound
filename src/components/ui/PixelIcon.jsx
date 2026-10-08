@@ -11,19 +11,19 @@ const PATHS = Object.fromEntries(Object.entries(PIXEL_ICONS).map(([name, rows]) 
  * @param {string} [props.className]
  */
 export default function PixelIcon({ name, size = 16, className }) {
-  const paths = PATHS[name]
-  return (
-    <svg
-      viewBox="0 0 16 16"
-      width={size}
-      height={size}
-      shapeRendering="crispEdges"
-      aria-hidden="true"
-      focusable="false"
-      className={className}
-    >
-      {paths['#'] && <path d={paths['#']} fill="currentColor" />}
-      {paths.o && <path d={paths.o} fill="var(--icon-accent, currentColor)" />}
-    </svg>
-  )
+    const paths = PATHS[name]
+    return (
+        <svg
+            viewBox="0 0 16 16"
+            width={size}
+            height={size}
+            shapeRendering="crispEdges"
+            aria-hidden="true"
+            focusable="false"
+            className={className}
+        >
+            {paths['#'] && <path d={paths['#']} fill="currentColor" />}
+            {paths.o && <path d={paths.o} fill="var(--icon-accent, currentColor)" />}
+        </svg>
+    )
 }

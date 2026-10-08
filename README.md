@@ -11,19 +11,20 @@ pnpm dev            # servidor de desarrollo
 pnpm lint           # ESLint (falla con cualquier warning)
 pnpm build          # build de producción en dist/
 pnpm preview        # sirve dist/ en http://localhost:4173
+pnpm format         # formatea todo con Prettier (4 espacios, ver .prettierrc.json)
 pnpm assets         # regenera favicon.svg, apple-touch-icon.png y og-image.png
 ```
 
 ## Editar datos del negocio — `src/data/business.js`
 
-| Campo | Para qué sirve |
-| --- | --- |
-| `siteUrl` | Dominio real, sin barra final. Se usa en canonical, hreflang, Open Graph, JSON-LD y sitemap. |
-| `email` | Destino del formulario (`mailto:`) y del enlace de contacto directo. |
-| `whatsapp` | Solo dígitos en formato internacional (`5511999999999`). Vacío = se oculta el botón de WhatsApp. |
-| `social.github / linkedin / instagram` | URL completa. Las que queden vacías no se muestran. |
-| `stats` | Cifras opcionales para "Por qué elegirnos". En `null` no se muestran: pon solo números reales. |
-| `TECH_STACK` | Badges de la sección Stack. Agrega, quita o reordena objetos `{ name }`. |
+| Campo                                  | Para qué sirve                                                                                   |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| `siteUrl`                              | Dominio real, sin barra final. Se usa en canonical, hreflang, Open Graph, JSON-LD y sitemap.     |
+| `email`                                | Destino del formulario (`mailto:`) y del enlace de contacto directo.                             |
+| `whatsapp`                             | Solo dígitos en formato internacional (`5511999999999`). Vacío = se oculta el botón de WhatsApp. |
+| `social.github / linkedin / instagram` | URL completa. Las que queden vacías no se muestran.                                              |
+| `stats`                                | Cifras opcionales para "Por qué elegirnos". En `null` no se muestran: pon solo números reales.   |
+| `TECH_STACK`                           | Badges de la sección Stack. Agrega, quita o reordena objetos `{ name }`.                         |
 
 ## Editar proyectos — `src/data/projects.js`
 
@@ -31,14 +32,14 @@ Cada objeto del array `PROJECTS` es una tarjeta:
 
 ```js
 {
-  id: 'mi-proyecto',              // único, sin espacios
-  name: 'Mi Proyecto',            // igual en todos los idiomas
-  category: 'landing',            // 'landing' | 'corporate' | 'ecommerce' | 'webapp'
-  description: { 'pt-BR': '…', es: '…', en: '…' },
-  stack: ['React', 'Vite'],
-  url: 'https://…',               // '' para ocultar "Ver proyecto"
-  image: '/projects/mi-proyecto.webp', // null = placeholder pixel-art
-  status: 'beta',                 // opcional: 'demo' | 'beta' (etiqueta "demo" / "en pruebas")
+    id: 'mi-proyecto',              // único, sin espacios
+    name: 'Mi Proyecto',            // igual en todos los idiomas
+    category: 'landing',            // 'landing' | 'corporate' | 'ecommerce' | 'webapp'
+    description: { 'pt-BR': '…', es: '…', en: '…' },
+    stack: ['React', 'Vite'],
+    url: 'https://…',               // '' para ocultar "Ver proyecto"
+    image: '/projects/mi-proyecto.webp', // null = placeholder pixel-art
+    status: 'beta',                 // opcional: 'demo' | 'beta' (etiqueta "demo" / "en pruebas")
 }
 ```
 

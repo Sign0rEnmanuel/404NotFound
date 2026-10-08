@@ -6,18 +6,18 @@ import { useLocation } from 'react-router-dom'
  * para lectores de pantalla y teclado; si no hay ancla, vuelve arriba.
  */
 export default function ScrollManager() {
-  const { pathname, hash, key } = useLocation()
+    const { pathname, hash, key } = useLocation()
 
-  useEffect(() => {
-    if (!hash) {
-      window.scrollTo({ top: 0, behavior: 'instant' })
-      return
-    }
-    const target = document.getElementById(decodeURIComponent(hash.slice(1)))
-    if (!target) return
-    target.scrollIntoView({ block: 'start' })
-    target.focus({ preventScroll: true })
-  }, [pathname, hash, key])
+    useEffect(() => {
+        if (!hash) {
+            window.scrollTo({ top: 0, behavior: 'instant' })
+            return
+        }
+        const target = document.getElementById(decodeURIComponent(hash.slice(1)))
+        if (!target) return
+        target.scrollIntoView({ block: 'start' })
+        target.focus({ preventScroll: true })
+    }, [pathname, hash, key])
 
-  return null
+    return null
 }

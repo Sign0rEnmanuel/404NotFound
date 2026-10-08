@@ -14,32 +14,36 @@ import './ui.css'
  * @param {import('react').ReactNode} props.children
  */
 export default function Reveal({ as: Tag = 'div', delay = 0, className = '', children }) {
-  const ref = useRef(null)
-  const reduce = usePrefersReducedMotion()
+    const ref = useRef(null)
+    const reduce = usePrefersReducedMotion()
 
-  useEffect(() => {
-    const el = ref.current
-    if (!el || reduce) return undefined
-    let timer
-    const stop = inView(
-      el,
-      () => {
-        timer = setTimeout(() => {
-          el.classList.add('is-revealed')
-          animate(el, { opacity: [0, 1], transform: ['translateY(16px)', 'none'] }, { duration: 0.45, ease: [0.2, 0.7, 0.2, 1] })
-        }, delay * 1000)
-      },
-      { amount: 0.2 },
+    useEffect(() => {
+        const el = ref.current
+        if (!el || reduce) return undefined
+        let timer
+        const stop = inView(
+            el,
+            () => {
+                timer = setTimeout(() => {
+                    el.classList.add('is-revealed')
+                    animate(
+                        el,
+                        { opacity: [0, 1], transform: ['translateY(16px)', 'none'] },
+                        { duration: 0.45, ease: [0.2, 0.7, 0.2, 1] },
+                    )
+                }, delay * 1000)
+            },
+            { amount: 0.2 },
+        )
+        return () => {
+            stop()
+            clearTimeout(timer)
+        }
+    }, [delay, reduce])
+
+    return (
+        <Tag ref={ref} className={`reveal ${className}`.trim()}>
+            {children}
+        </Tag>
     )
-    return () => {
-      stop()
-      clearTimeout(timer)
-    }
-  }, [delay, reduce])
-
-  return (
-    <Tag ref={ref} className={`reveal ${className}`.trim()}>
-      {children}
-    </Tag>
-  )
 }

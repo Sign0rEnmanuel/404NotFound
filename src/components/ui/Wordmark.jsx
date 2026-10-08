@@ -5,11 +5,11 @@
  * @param {string} [props.className]
  */
 export default function Wordmark({ name, className = '' }) {
-  const [, code = '', rest = name] = name.match(/^(\d+)(.*)$/) ?? []
-  return (
-    <span className={`wordmark ${className}`.trim()}>
-      <span className="wordmark__code">{code}</span>
-      {rest}
-    </span>
-  )
+    const [, code = '', rest = name] = name.match(/^(\d+)(.*)$/) ?? []
+    return (
+        <span className={`wordmark ${className}`.trim()}>
+            <span className="wordmark__code">{code}</span>
+            {rest}
+        </span>
+    )
 }

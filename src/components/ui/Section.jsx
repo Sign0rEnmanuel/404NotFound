@@ -12,20 +12,20 @@ import './ui.css'
  * @param {import('react').ReactNode} props.children
  */
 export default function Section({ id, eyebrow, title, intro, className = '', decoration, children }) {
-  const headingId = `${id}-title`
-  return (
-    <section id={id} className={`section ${className}`.trim()} aria-labelledby={headingId} tabIndex={-1}>
-      {decoration}
-      <div className="container">
-        <header className="section__header">
-          <p className="section__eyebrow mono">{eyebrow}</p>
-          <h2 id={headingId} className="section__title">
-            {title}
-          </h2>
-          {intro && <p className="section__intro">{intro}</p>}
-        </header>
-        {children}
-      </div>
-    </section>
-  )
+    const headingId = `${id}-title`
+    return (
+        <section id={id} className={`section ${className}`.trim()} aria-labelledby={headingId} tabIndex={-1}>
+            {decoration}
+            <div className="container">
+                <header className="section__header">
+                    <p className="section__eyebrow mono">{eyebrow}</p>
+                    <h2 id={headingId} className="section__title">
+                        {title}
+                    </h2>
+                    {intro && <p className="section__intro">{intro}</p>}
+                </header>
+                {children}
+            </div>
+        </section>
+    )
 }

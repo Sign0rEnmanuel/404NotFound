@@ -1,31 +1,31 @@
 /* Tokens de diseño. Si cambias la paleta, actualiza también src/lib/colors.js (favicon / OG). */
 :root {
-  /* Paleta de marca */
-  --bg: #0d1117;
-  --surface: #23173d;
-  --text: #e6edf3;
-  --accent-cyan: #22d3ee;
-  --accent-red: #ff4757;
-  --accent-amber: #fbbf24;
+    /* Paleta de marca */
+    --bg: #0d1117;
+    --surface: #23173d;
+    --text: #e6edf3;
+    --accent-cyan: #22d3ee;
+    --accent-red: #ff4757;
+    --accent-amber: #fbbf24;
 
-  /* Derivados (contraste AA verificado sobre --bg y --surface) */
-  --text-muted: #a3afbd; /* 8.5:1 sobre --bg, 7.5:1 sobre --surface */
-  --surface-line: #3d2b6b; /* bordes de tarjetas sobre --surface */
-  --bg-deep: #090c11; /* fondo alterno y terminales */
-  --text-faint: #8893a0; /* placeholders: 6.1:1 sobre --bg */
+    /* Derivados (contraste AA verificado sobre --bg y --surface) */
+    --text-muted: #a3afbd; /* 8.5:1 sobre --bg, 7.5:1 sobre --surface */
+    --surface-line: #3d2b6b; /* bordes de tarjetas sobre --surface */
+    --bg-deep: #090c11; /* fondo alterno y terminales */
+    --text-faint: #8893a0; /* placeholders: 6.1:1 sobre --bg */
 
-  /* Sombras pixel: sin blur, sin radio */
-  --shadow-color: #261b45;
-  --shadow-pixel: 4px 4px 0 var(--shadow-color);
-  --shadow-pixel-pressed: 2px 2px 0 var(--shadow-color);
+    /* Sombras pixel: sin blur, sin radio */
+    --shadow-color: #261b45;
+    --shadow-pixel: 4px 4px 0 var(--shadow-color);
+    --shadow-pixel-pressed: 2px 2px 0 var(--shadow-color);
 
-  /* Forma y espaciado (cuadrícula de 8px) */
-  --radius: 0;
-  --container: 1200px;
-  --gutter: clamp(16px, 4vw, 32px);
-  --header-h: 72px;
-  --section-y: clamp(72px, 10vw, 128px);
+    /* Forma y espaciado (cuadrícula de 8px) */
+    --radius: 0;
+    --container: 1200px;
+    --gutter: clamp(16px, 4vw, 32px);
+    --header-h: 72px;
+    --section-y: clamp(72px, 10vw, 128px);
 
-  /* Movimiento */
-  --t-fast: 120ms;
+    /* Movimiento */
+    --t-fast: 120ms;
 }
