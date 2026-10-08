@@ -98,12 +98,18 @@
     "categories": {
       "landing": "Landing page",
       "corporate": "Corporate",
-      "ecommerce": "E-commerce"
+      "ecommerce": "E-commerce",
+      "webapp": "Web app"
     },
     "placeholder": "example",
+    "status": {
+      "demo": "demo",
+      "beta": "in testing"
+    },
     "stackLabel": "Technologies used",
     "visit": "View project",
-    "imageAlt": "Pixel art illustration of the {{name}} project"
+    "imageAlt": "Pixel art illustration of the {{name}} project",
+    "screenshotAlt": "Screenshot of the {{name}} homepage"
   },
   "stack": {
     "eyebrow": "04 / stack",

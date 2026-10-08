@@ -98,12 +98,18 @@
     "categories": {
       "landing": "Landing page",
       "corporate": "Institucional",
-      "ecommerce": "E-commerce"
+      "ecommerce": "E-commerce",
+      "webapp": "Aplicação web"
     },
     "placeholder": "exemplo",
+    "status": {
+      "demo": "demo",
+      "beta": "em testes"
+    },
     "stackLabel": "Tecnologias usadas",
     "visit": "Ver projeto",
-    "imageAlt": "Ilustração em pixel art do projeto {{name}}"
+    "imageAlt": "Ilustração em pixel art do projeto {{name}}",
+    "screenshotAlt": "Captura da página inicial do projeto {{name}}"
   },
   "stack": {
     "eyebrow": "04 / stack",

@@ -47,6 +47,22 @@ const LAYOUTS = {
       [x, 20, 10, 2, 'var(--surface-line)'],
     ]),
   ],
+  webapp: [
+    [0, 3, 8, 22, 'var(--surface)'],
+    [2, 6, 4, 1, 'var(--accent-cyan)'],
+    [2, 9, 4, 1, 'var(--text-muted)'],
+    [2, 12, 4, 1, 'var(--text-muted)'],
+    [11, 6, 8, 5, 'var(--surface)'],
+    [21, 6, 8, 5, 'var(--surface)'],
+    [31, 6, 7, 5, 'var(--surface)'],
+    [12, 8, 4, 1, 'var(--accent-cyan)'],
+    [22, 8, 4, 1, 'var(--accent-red)'],
+    [32, 8, 4, 1, 'var(--text)'],
+    [11, 13, 27, 9, 'var(--surface)'],
+    [13, 15, 18, 1, 'var(--accent-red)'],
+    [13, 17, 12, 1, 'var(--accent-cyan)'],
+    [13, 19, 8, 1, 'var(--accent-amber)'],
+  ],
 }
 
 /**
@@ -57,7 +73,7 @@ const LAYOUTS = {
  * y asigna `image: '/projects/archivo.webp'` en src/data/projects.js.
  * @param {object} props
  * @param {string | null} [props.src]
- * @param {'landing' | 'corporate' | 'ecommerce'} props.category
+ * @param {'landing' | 'corporate' | 'ecommerce' | 'webapp'} props.category
  * @param {string} props.alt
  */
 export default function ProjectImage({ src, category, alt }) {

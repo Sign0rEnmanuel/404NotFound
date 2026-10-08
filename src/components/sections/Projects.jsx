@@ -24,23 +24,26 @@ function ProjectCard({ project }) {
         <ProjectImage
           src={project.image}
           category={project.category}
-          alt={t('projects.imageAlt', { name: project.name })}
+          alt={t(project.image ? 'projects.screenshotAlt' : 'projects.imageAlt', { name: project.name })}
         />
       </div>
       <div className="project-card__body">
         <p className="project-card__meta mono">
           <span>{t(`projects.categories.${project.category}`)}</span>
           {project.placeholder && <span className="tag tag--amber">{t('projects.placeholder')}</span>}
+          {project.status && <span className="tag tag--amber">{t(`projects.status.${project.status}`)}</span>}
         </p>
         <h3 className="card__title">{project.name}</h3>
         <p className="card__text">{description}</p>
-        <ul className="badge-list" aria-label={t('projects.stackLabel')}>
-          {project.stack.map((tech) => (
-            <li key={tech} className="badge">
-              {tech}
-            </li>
-          ))}
-        </ul>
+        {project.stack.length > 0 && (
+          <ul className="badge-list" aria-label={t('projects.stackLabel')}>
+            {project.stack.map((tech) => (
+              <li key={tech} className="badge">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        )}
         {project.url && (
           <a className="project-card__link mono" href={project.url} target="_blank" rel="noopener noreferrer">
             {t('projects.visit')}

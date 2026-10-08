@@ -33,12 +33,12 @@ Cada objeto del array `PROJECTS` es una tarjeta:
 {
   id: 'mi-proyecto',              // único, sin espacios
   name: 'Mi Proyecto',            // igual en todos los idiomas
-  category: 'landing',            // 'landing' | 'corporate' | 'ecommerce'
+  category: 'landing',            // 'landing' | 'corporate' | 'ecommerce' | 'webapp'
   description: { 'pt-BR': '…', es: '…', en: '…' },
   stack: ['React', 'Vite'],
   url: 'https://…',               // '' para ocultar "Ver proyecto"
   image: '/projects/mi-proyecto.webp', // null = placeholder pixel-art
-  placeholder: false,             // true muestra la etiqueta "ejemplo"
+  status: 'beta',                 // opcional: 'demo' | 'beta' (etiqueta "demo" / "en pruebas")
 }
 ```
 
