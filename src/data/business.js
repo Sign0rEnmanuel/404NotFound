@@ -8,12 +8,12 @@ export const BUSINESS = {
   // TODO: dominio real (sin barra final). Se usa en canonical, hreflang, Open Graph y JSON-LD.
   siteUrl: 'https://404notfound.dev',
 
-  // TODO: email real. El formulario de contacto arma un mailto: hacia esta dirección.
-  email: 'contato@404notfound.dev',
+  // El formulario de contacto arma un mailto: hacia esta dirección.
+  email: 'marzalenmanuel4@gmail.com',
 
-  // TODO: número de WhatsApp en formato internacional, solo dígitos (ej. '5511999999999').
+  // Número de WhatsApp en formato internacional, solo dígitos (ej. '5511999999999').
   // Si queda vacío, el botón "Enviar por WhatsApp" no se muestra.
-  whatsapp: '',
+  whatsapp: '5541984376816',
 
   // TODO: URLs completas de tus perfiles. Las que queden vacías no se muestran.
   social: {
