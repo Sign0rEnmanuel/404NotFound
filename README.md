@@ -61,11 +61,16 @@ Las capturas van en `public/projects/` (recomendado: `.webp`, 1280×800, proporc
 
 ## Deploy
 
-Es una SPA: el servidor debe devolver `index.html` en cualquier ruta para que funcione la página 404 de React Router.
+`pnpm build` genera un sitio estático en `dist/` y **pre-renderiza** el HTML (ver `src/entry-server.jsx` y `scripts/prerender.js`):
 
-- **Vercel**: importa el repo; detecta Vite solo (build `pnpm build`, salida `dist`). Las rutas ya están en `vercel.json`.
-- **Netlify**: build `pnpm build`, carpeta de publicación `dist`. Las rutas ya están en `public/_redirects`.
+- `dist/index.html`: la home completa en pt-BR, para que buscadores y analizadores de SEO vean el contenido sin ejecutar JavaScript. En el navegador, React la hidrata (o la vuelve a renderizar si el visitante usa otro idioma).
+- `dist/404.html`: la página 404, con su propio título y `noindex`. Vercel y Netlify la sirven con estado HTTP 404 en cualquier URL inexistente, sin configuración extra.
 
-Antes de publicar, actualiza `siteUrl` en `business.js`: con él se generan `sitemap.xml` y `robots.txt` en cada build.
+Plataformas:
 
-> Nota: al ser una SPA, las URLs inexistentes responden con estado HTTP 200 y muestran la 404 de React. La página incluye `<meta name="robots" content="noindex">` para que no se indexe.
+- **Vercel**: importa el repo; detecta Vite solo (build `pnpm build`, salida `dist`).
+- **Netlify**: build `pnpm build`, carpeta de publicación `dist`.
+
+No agregues una regla de "todas las rutas → index.html": haría que las URLs inexistentes respondan 200 con la home.
+
+Si cambias de dominio, actualiza `siteUrl` en `business.js`: con él se generan canonical, hreflang, `sitemap.xml` y `robots.txt` en cada build.

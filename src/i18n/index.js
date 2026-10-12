@@ -1,21 +1,17 @@
 import i18n from 'i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import { initReactI18next } from 'react-i18next'
-import en from './en.json'
-import es from './es.json'
-import pt from './pt.json'
 import { DEFAULT_LANGUAGE, LANGUAGES, normalizeLanguage } from './languages.js'
+import { resources } from './resources.js'
 
 const LANGUAGE_STORAGE_KEY = '404nf-lang'
 
 i18n.use(LanguageDetector)
     .use(initReactI18next)
     .init({
-        resources: {
-            'pt-BR': { translation: pt },
-            es: { translation: es },
-            en: { translation: en },
-        },
+        resources,
+        // Síncrono: el idioma debe estar resuelto antes de decidir si hidratar el HTML pre-renderizado
+        initAsync: false,
         supportedLngs: LANGUAGES.map((lang) => lang.code),
         fallbackLng: DEFAULT_LANGUAGE,
         interpolation: { escapeValue: false },

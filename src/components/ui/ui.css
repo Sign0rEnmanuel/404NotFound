@@ -268,7 +268,7 @@
 
 /* ---------- Reveal ---------- */
 @media (prefers-reduced-motion: no-preference) {
-    .reveal:not(.is-revealed) {
+    .js .reveal:not(.is-revealed) {
         opacity: 0;
     }
 }
