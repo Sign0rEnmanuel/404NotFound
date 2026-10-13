@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { LANGUAGES } from '../i18n/languages.js'
+import { useLocation } from 'react-router-dom'
+import { DEFAULT_LANGUAGE, LANGUAGES, normalizeLanguage } from '../i18n/languages.js'
 import { buildJsonLd, ogLocale, pageUrl, serializeJsonLd } from '../seo/seo.js'
 
 /** Crea o actualiza un <meta>. */
@@ -23,6 +24,9 @@ function setMeta(attr, key, content) {
 export default function Seo({ page }) {
     const { t, i18n } = useTranslation()
     const lang = i18n.resolvedLanguage
+    // El canonical describe la URL visitada, no el idioma detectado: la raíz es pt-BR y ?lang=xx cada variante.
+    const langParam = new URLSearchParams(useLocation().search).get('lang')
+    const urlLang = langParam ? normalizeLanguage(langParam) : DEFAULT_LANGUAGE
 
     useEffect(() => {
         const meta = t('meta', { returnObjects: true })
@@ -36,7 +40,7 @@ export default function Seo({ page }) {
         setMeta('name', 'robots', isHome ? 'index, follow' : 'noindex')
         setMeta('property', 'og:title', title)
         setMeta('property', 'og:description', description)
-        setMeta('property', 'og:url', pageUrl(lang))
+        setMeta('property', 'og:url', pageUrl(urlLang))
         setMeta('property', 'og:locale', ogLocale(lang))
         setMeta('property', 'og:image:alt', meta.ogImageAlt)
         setMeta('name', 'twitter:title', title)
@@ -51,11 +55,11 @@ export default function Seo({ page }) {
         })
 
         const canonical = document.head.querySelector('link[rel="canonical"]')
-        if (canonical) canonical.href = pageUrl(lang)
+        if (canonical) canonical.href = pageUrl(urlLang)
 
         const jsonLd = document.getElementById('ld-json')
         if (jsonLd) jsonLd.textContent = serializeJsonLd(buildJsonLd(meta, t('footer', { returnObjects: true }), lang))
-    }, [t, lang, page])
+    }, [t, lang, urlLang, page])
 
     return null
 }
