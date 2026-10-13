@@ -6,7 +6,7 @@ export const BUSINESS = {
     name: '404NotFound',
 
     // Dominio público (sin barra final). Se usa en canonical, hreflang, Open Graph, JSON-LD y sitemap.
-    siteUrl: 'https://404-not-found-ebon-six.vercel.app',
+    siteUrl: 'https://404notfound.dev',
 
     // El formulario de contacto arma un mailto: hacia esta dirección.
     email: 'marzalenmanuel4@gmail.com',
@@ -18,7 +18,7 @@ export const BUSINESS = {
     // TODO: URLs completas de tus perfiles. Las que queden vacías no se muestran.
     social: {
         github: 'https://github.com/Sign0rEnmanuel',
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/marzalenmanuel4/',
         instagram: '',
     },
 
