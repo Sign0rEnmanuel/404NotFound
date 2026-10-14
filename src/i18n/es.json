@@ -104,7 +104,8 @@
         "placeholder": "ejemplo",
         "status": {
             "demo": "demo",
-            "beta": "en pruebas"
+            "beta": "en pruebas",
+            "personal": "proyecto personal"
         },
         "stackLabel": "Tecnologías usadas",
         "visit": "Ver proyecto",

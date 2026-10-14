@@ -39,7 +39,7 @@ Cada objeto del array `PROJECTS` es una tarjeta:
     stack: ['React', 'Vite'],
     url: 'https://…',               // '' para ocultar "Ver proyecto"
     image: '/projects/mi-proyecto.webp', // null = placeholder pixel-art
-    status: 'beta',                 // opcional: 'demo' | 'beta' (etiqueta "demo" / "en pruebas")
+    status: 'personal',             // opcional: 'demo' | 'beta' | 'personal' (etiqueta de estado)
 }
 ```
 

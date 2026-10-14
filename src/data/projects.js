@@ -10,7 +10,7 @@
  * - url: enlace público (opcional, '' para ocultar el botón).
  * - image: captura real (opcional). Pon el archivo en /public/projects/ y usa '/projects/archivo.webp'
  *   (recomendado 1280x800). Si es null, <ProjectImage> dibuja un placeholder pixel-art según la categoría.
- * - status: 'demo' | 'beta' (opcional). Muestra una etiqueta ("demo" / "en pruebas").
+ * - status: 'demo' | 'beta' | 'personal' (opcional). Muestra una etiqueta ("demo" / "en pruebas" / "proyecto personal").
  * - placeholder: true marca proyectos de ejemplo (muestran la etiqueta "ejemplo").
  *
  * TODO: completa `stack` de cada proyecto con las tecnologías reales.
@@ -31,19 +31,19 @@ export const PROJECTS = [
         image: '/projects/admin-dinero.webp',
     },
     {
-        id: 'tecno-smach-nss',
-        name: 'Tecno-Smach-NSS',
-        category: 'ecommerce',
+        id: 'ilha-areia',
+        name: 'Ilha & Areia',
+        category: 'landing',
         description: {
             'pt-BR':
-                'Plataforma de compras online com pagamento via Mercado Pago. Projeto demo: os pagamentos usam uma conta de teste.',
-            es: 'Plataforma de compras online con pagos por Mercado Pago. Proyecto demo: los pagos usan una cuenta de prueba.',
-            en: 'Online shopping platform with Mercado Pago checkout. Demo project: payments run on a test account.',
+                'Landing page de uma sorveteria artesanal fictícia na Lagoa da Conceição, em Florianópolis. Gelato batido em pequenos lotes com a receita da Nonna Teresa: feito devagar, saboreado sem pressa.',
+            es: 'Landing page de una heladería artesanal ficticia en la Lagoa da Conceição, Florianópolis. Gelato batido en lotes chicos con la receta de la Nonna Teresa: hecho despacio, saboreado sin prisa.',
+            en: "Landing page for a fictional artisan gelato shop in Lagoa da Conceição, Florianópolis. Small-batch gelato made with Nonna Teresa's recipe: made slowly, savored without rush.",
         },
         stack: [],
-        url: 'https://tecno-smach-nss.vercel.app/',
-        image: '/projects/tecno-smach-nss.webp',
-        status: 'demo',
+        url: 'https://ilha-areia.vercel.app/',
+        image: '/projects/ilha-areia.webp',
+        status: 'personal',
     },
     {
         id: 'the-matrix-lab-academy',
@@ -61,18 +61,19 @@ export const PROJECTS = [
         status: 'beta',
     },
     {
-        id: 'blackfridayforever',
-        name: 'BLACKFRIDAYFOREVER',
-        category: 'webapp',
+        id: 'pe-na-areia',
+        name: 'Pé na Areia',
+        category: 'landing',
         description: {
             'pt-BR':
-                'As melhores ofertas com descontos reais de até 70%. Caçamos as promoções pra você, 24 horas por dia, 365 dias por ano.',
-            es: 'Las mejores ofertas con descuentos reales de hasta 70%. Cazamos las promociones por ti, 24 horas al día, 365 días al año.',
-            en: 'The best deals with real discounts of up to 70%. We hunt down promotions for you, 24 hours a day, 365 days a year.',
+                'Landing page de uma pizzaria fictícia à beira-mar, com forno a lenha, massa de fermentação natural e pedidos pelo WhatsApp.',
+            es: 'Landing page de una pizzería de playa ficticia, con horno a leña, masa de fermentación natural y pedidos por WhatsApp.',
+            en: 'Landing page for a fictional beachside pizzeria with a wood-fired oven, naturally leavened dough and WhatsApp ordering.',
         },
         stack: [],
-        url: 'https://blackfridayforever.com.br/',
-        image: '/projects/blackfridayforever.webp',
+        url: 'https://p-na-areia.vercel.app/',
+        image: '/projects/pe-na-areia.webp',
+        status: 'personal',
     },
     {
         id: 'taskflow',
